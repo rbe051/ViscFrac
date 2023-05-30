@@ -1,0 +1,12 @@
+meshio==5.3.4
+networkx==2.8.5
+numpy>=1.22.4
+scipy>=1.8.1
+matplotlib
+cython;platform_system=="Linux"
+future>=0.17.1
+six>=1.16.0
+shapely==1.8.2
+numba>=0.50
+vtk==9.1.0
+gmsh==4.10.2
