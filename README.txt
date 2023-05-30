@@ -9,7 +9,7 @@ and the repository also contains the runscripts for reproducing the results of t
 
 ViscFrac is based on a modified version of the simulation tool PorePy. PorePy is modified to allow for adaptivity of the grid. The modified version of PorePy is included in this repository as viscous_porepy, but can also be found here: https://github.com/rbe051/porepy/tree/leaf_grid
 
-The required packages needed to run the examples can be foundin requirements.txt
+The required packages needed to run the examples can be found in requirements.txt
 
 To speed up the simulation times we recomend that you install pypardiso or umfpack on your system. See:
 https://pypi.org/project/pypardiso/
