@@ -1,3 +1,26 @@
+"""
+Module for setting up and running the cases with parallel fracture networks
+from Paper:
+    Berge, R.L,. Berre, I., Keilekavlen, E., & Nordbotten, J.,M.. (2023) 
+        Numerical simulations of viscous fingering in fractured porous media
+
+
+Copyright 2023 Runar Lie Berge
+
+This file is part of ViscFrac.
+
+ViscFrac is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+ViscFrac is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+ViscFrac. If not, see <https://www.gnu.org/licenses/>.
+"""
 import numpy as np
 import viscous_porepy as pp
 import viscous_porepy.ad

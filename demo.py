@@ -3,6 +3,23 @@
 A script for demonstrating the use of the software. In this demonstration the
 cases are run on a coarse mesh, long time steps and a short end time to limit
 the computational time.
+
+
+Copyright 2023 Runar Lie Berge
+
+This file is part of ViscFrac.
+
+ViscFrac is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+ViscFrac is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+ViscFrac. If not, see <https://www.gnu.org/licenses/>.
 """
 import os
 
