@@ -1,6 +1,5 @@
 """
-Module for setting up and running the cases with brick fracture networks
-from Paper:
+Module for setting up and running the cases without fractures from Paper:
     Berge, R.L,. Berre, I., Keilekavlen, E., & Nordbotten, J.,M.. (2023)
         Numerical simulations of viscous fingering in fractured porous media
 
@@ -27,10 +26,10 @@ import sys
 import os
 from multiprocessing import Pool
 
-import problems
-import discretizations
-import models
-import viz
+from cases import base_problem as problems
+from simulator import discretizations
+from simulator import models
+from utils import viz
 
 
 def run_Pe_R_variation(run_id, local_grid_adaptation=False):
@@ -86,7 +85,7 @@ def run_Pe_R_variation(run_id, local_grid_adaptation=False):
     print("Solve with viscosity model with mesh size:{} ".format(mesh_size))
 
     print("Mesh and assign problem")
-    homogeneous_problem = problems.MovingFrame(mesh_args, param)
+    homogeneous_problem = problems.BaseData(mesh_args, param)
     print("Discretize")
     disc = discretizations.ViscousFlow(homogeneous_problem)
     print("Call viscous flow model")
