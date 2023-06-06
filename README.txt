@@ -6,7 +6,7 @@ As an introduction to the ViscFrac toolbox it is recommended to inspect and run 
 
 script. This provides an interface and demonstration for how to define parameters, set up a problem and run the simulator. Note that the demo uses a coarse mesh and time-stepping to speed up the simulations to demonstrate the software. To obtain reliable results a much finer grid and time-stepping should be used.
 
-The implementation of the simulator is based on the paper:
+The implementation of ViscFrac is based on the paper:
 
   Numerical simulations of viscous fingering in fractured porous media
     by Runar L. Berge, Inga Berre, Eirik Keilegavlen, and Jan M. Nordbotten
