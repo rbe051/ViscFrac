@@ -1,4 +1,10 @@
 """
+Module for setting up and running the cases with brick fracture networks
+from Paper:
+    Berge, R.L,. Berre, I., Keilekavlen, E., & Nordbotten, J.,M.. (2023)
+        Numerical simulations of viscous fingering in fractured porous media
+
+
 Copyright 2023 Runar Lie Berge
 
 This file is part of ViscFrac.
@@ -27,7 +33,7 @@ import models
 import viz
 
 
-def run_no_frac(run_id, local_grid_adaptation=False):
+def run_Pe_R_variation(run_id, local_grid_adaptation=False):
     np.random.seed()
     Pes = [
         1000, 1000, 1000, 1000,
@@ -93,7 +99,7 @@ if __name__ == "__main__":
     os.environ['OMP_NUM_THREADS'] = "2"
     if len(sys.argv) > 1 and sys.argv[1] != "-i":
         run_id = int(sys.argv[1])
-        run_no_frac(run_id)
+        run_Pe_R_variation(run_id)
     else:
         # Define the dataset
         run_id = np.arange(9)
@@ -102,6 +108,6 @@ if __name__ == "__main__":
         agents = run_id.size
         chunksize = 1
         with Pool(processes=agents) as pool:
-            result = pool.map(run_no_frac, run_id, chunksize)
+            result = pool.map(run_Pe_R_variation, run_id, chunksize)
         # Output the result
         print('Result:  ' + str(result))
